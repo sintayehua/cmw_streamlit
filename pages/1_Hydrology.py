@@ -31,7 +31,11 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
+        m.split_map(
+            left_layer=landcover, right_layer=landcover
+        )
+        #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
+        #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
         #m.split_map(
         #    left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
