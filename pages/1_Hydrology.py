@@ -32,7 +32,7 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_cog_layer(cog_landcover, colormap= "terrain", name="Landcover)")
+        m.add_cog_layer(cog_landcover, colormap= "turbo", name="Landcover)")
         m.add("inspector")
         m
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
