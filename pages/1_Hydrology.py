@@ -33,6 +33,7 @@ with st.expander("See source code"):
         )
         m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         m.add("inspector")
+        m
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
