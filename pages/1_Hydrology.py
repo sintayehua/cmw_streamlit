@@ -32,7 +32,8 @@ with st.expander("See source code"):
             add_legend=True,
         )
         m.split_map(
-            left_layer=landcover, right_layer=landcover
+            left_layer=landcover, left_args={"colormap_name": "tab20", "nodata": 0, "opacity": 0.7}, 
+            right_layer=landcover
         )
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
