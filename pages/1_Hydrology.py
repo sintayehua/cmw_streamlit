@@ -12,6 +12,7 @@ with st.expander("See source code"):
         climate = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/nma_stations.csv"
         flow = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/flow_stations.csv"
         landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
+        cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_points_from_xy(
             climate,
@@ -31,7 +32,7 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
+        m.add_cog_layer(cog_landcover, name="Landcover)")
         m.add("inspector")
         m
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
