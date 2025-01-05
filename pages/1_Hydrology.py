@@ -35,6 +35,7 @@ with st.expander("See source code"):
             left_layer=landcover, left_args={"colormap_name": "terrain", "nodata": 0}, 
             right_layer=landcover
         )
+        m.add("inspector")
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
