@@ -39,7 +39,7 @@ The Choke Mountain watersheds, located in the Amhara Region of Ethiopia, are a v
 
 st.markdown(markdown)
 
-photo = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/dmu.png"
+photo = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/choke.jpg"
 st.image(photo)
 
 m = leafmap.Map(minimap_control=True)
