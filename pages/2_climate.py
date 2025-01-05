@@ -2,6 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-markdown = """
+st.markdown("""
 Page under construction...
 """
+)
