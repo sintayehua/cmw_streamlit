@@ -35,6 +35,9 @@ st.header("Background")
 markdown = """
 The Choke Mountain watersheds, located in the Amhara Region of Ethiopia, are a vital ecological zone characterized by their rich biodiversity and significant water resources. These watersheds play a crucial role in supporting local agriculture, providing water for irrigation, and sustaining various forms of wildlife. The region is known for its unique highland ecosystems, which include a variety of endemic plant and animal species. Additionally, the Choke Mountain watersheds contribute to the livelihoods of the surrounding communities by offering resources for farming, fishing, and other economic activities.
 
+
+
+
 """
 
 st.markdown(markdown)
