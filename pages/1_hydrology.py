@@ -4,24 +4,7 @@ import leafmap.foliumap as leafmap
 
 st.set_page_config(layout="wide")
 
-markdown = """
-CMW datasets
-<https://www.dmu.edu.et>
-"""
-
-st.sidebar.title("About")
-st.sidebar.info(markdown)
-logo = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/dmu.png"
-st.sidebar.image(logo)
-
-markdown2 = """
-Hydraulic and Water Resources Engineering Department
-
-© 2025 Sintayehu Adefires Abebe
-"""
-st.sidebar.info(markdown2)
-
-st.title("Choke Mountain Watersheds")
+st.title("CMW Hydrology")
 
 with st.expander("See source code"):
     with st.echo():
