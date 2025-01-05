@@ -11,25 +11,22 @@ A Streamlit map template
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
+logo = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/dmu.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Streamlit for Geospatial Applications")
+st.title("Choke Mountain Watersheds (CMW)")
 
 st.markdown(
     """
-    This multipage app template demonstrates various interactive web apps created using [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org). It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+    A streamlit web app to showcase geospatial datasets produced for the CMW
     """
 )
 
-st.header("Instructions")
+st.header("Background")
 
 markdown = """
-1. For the [GitHub repository](https://github.com/opengeos/streamlit-map-template) or [use it as a template](https://github.com/opengeos/streamlit-map-template/generate) for your own project.
-2. Customize the sidebar by changing the sidebar text and logo in each Python files.
-3. Find your favorite emoji from https://emojipedia.org.
-4. Add a new app to the `pages/` directory with an emoji in the file name, e.g., `1_🚀_Chart.py`.
+The Choke Mountain watersheds, located in the Amhara Region of Ethiopia, are a vital ecological zone characterized by their rich biodiversity and significant water resources. These watersheds play a crucial role in supporting local agriculture, providing water for irrigation, and sustaining various forms of wildlife. The region is known for its unique highland ecosystems, which include a variety of endemic plant and animal species. Additionally, the Choke Mountain watersheds contribute to the livelihoods of the surrounding communities by offering resources for farming, fishing, and other economic activities.
 
 """
 
