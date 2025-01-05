@@ -5,8 +5,8 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+CMW datasets
+<https://www.dmu.edu.et>
 """
 
 st.sidebar.title("About")
@@ -14,12 +14,19 @@ st.sidebar.info(markdown)
 logo = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/dmu.png"
 st.sidebar.image(logo)
 
+markdown2 = """
+Hydraulic and Water Resources Engineering Department
+
+© 2025 Sintayehu Adefires Abebe
+"""
+st.sidebar.info(markdown2)
+
 # Customize page title
 st.title("Choke Mountain Watersheds (CMW)")
 
 st.markdown(
     """
-    A streamlit web app to showcase geospatial datasets produced for the CMW
+    A web app to showcase geospatial datasets produced for the CMW
     """
 )
 
