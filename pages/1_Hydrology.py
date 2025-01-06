@@ -32,9 +32,14 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_cog_layer(cog_landcover, colormap= "turbo", name="Landcover)")
-        m.add("inspector")
-        m
+        # Add a Legend
+        colors = ['#006400', '#ffbb22','#ffff4c','#f096ff',
+                  '#fa0000', '#b4b4b4','#f0f0f0','#0064c8']
+        labels = ["Trees","Shrubland","Grassland","Cropland",
+                  "Herbaceous wetland", "Bareland", "Built-up", "Open water"]
+        
+        m.add_cog_layer(cog_landcover, name="Landcover)")
+        m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
