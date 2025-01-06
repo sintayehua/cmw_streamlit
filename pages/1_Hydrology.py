@@ -16,7 +16,7 @@ with st.expander("See source code"):
         soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
         
         m.add_geojson(boundary, layer_name="CMW boundary")
-        m.add_geojson(soil, layer_name="Soil")
+        m.add_vector(soil, layer_name="Soil")
         m.add_points_from_xy(
             climate,
             x="long",
