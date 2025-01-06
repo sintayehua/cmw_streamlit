@@ -45,8 +45,8 @@ with st.expander("See source code"):
             "5": "#fa0000",
             "7": "#b4b4b4",
             "8": "#f0f0f0",
-            "10": "#0064c8",
-        }
+            "10": "#0064c8"}
+        
         m.add_cog_layer(cog_landcover, colormap=colormap, name="Landcover")
         m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
