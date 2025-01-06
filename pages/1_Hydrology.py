@@ -13,6 +13,7 @@ with st.expander("See source code"):
         flow = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/flow_stations.csv"
         landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
+        soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
         
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_points_from_xy(
@@ -48,8 +49,9 @@ with st.expander("See source code"):
             "8": "#f0f0f0",
             "10": "#0064c8"}
         
-        #m.add_cog_layer(cog_landcover, name="Landcover")
-        m.add_raster(landcover, colormap="turbo", n_class=8, layer_name="Landcover")
+        m.add_cog_layer(cog_landcover, name="Landcover")
+        m.add_colormap(cmap=colormap)
+        #m.add_raster(landcover, colormap="turbo", n_class=8, layer_name="Landcover")
         #m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
