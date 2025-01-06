@@ -38,7 +38,7 @@ with st.expander("See source code"):
         labels = ["Trees","Shrubland","Grassland","Cropland",
                   "Herbaceous wetland", "Bareland", "Built-up", "Open water"]
         
-        m.add_cog_layer(cog_landcover, name="Landcover)")
+        m.add_cog_layer(cog_landcover, colormap = colors, name="Landcover)")
         m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
