@@ -13,6 +13,7 @@ with st.expander("See source code"):
         flow = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/flow_stations.csv"
         landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
+        
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_points_from_xy(
             climate,
