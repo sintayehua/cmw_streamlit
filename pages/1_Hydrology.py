@@ -37,7 +37,16 @@ with st.expander("See source code"):
                   '#fa0000', '#b4b4b4','#f0f0f0','#0064c8']
         labels = ["Trees","Shrubland","Grassland","Cropland",
                   "Herbaceous wetland", "Bareland", "Built-up", "Open water"]
-        
+        colormap = {
+            "1": "#006400",
+            "2": "#ffbb22",
+            "3": "#ffff4c",
+            "4": "f096ff",
+            "5": "#fa0000",
+            "7": "#b4b4b4",
+            "8": "#f0f0f0",
+            "10": "#0064c8"
+        }
         m.add_cog_layer(cog_landcover, colormap = colors, name="Landcover)")
         m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
