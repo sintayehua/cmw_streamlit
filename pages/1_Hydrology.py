@@ -12,6 +12,7 @@ with st.expander("See source code"):
         climate = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/nma_stations.csv"
         flow = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/flow_stations.csv"
         landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
+        landcover_full = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/LandCover20m2016ESAC.tif"
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
         soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
         
@@ -58,7 +59,7 @@ with st.expander("See source code"):
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
         m.split_map(
-            left_layer=landcover, right_layer=landcover
+            left_layer=landcover_full, right_layer=landcover
         )
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
     
