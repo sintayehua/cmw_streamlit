@@ -15,6 +15,7 @@ with st.expander("See source code"):
         landcover_full = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/LandCover20m2016ESAC.tif"
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
         soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
+        watersheds = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/cmw_watersheds.geojson"
         
         m.add_geojson(boundary, layer_name="CMW boundary")
         # #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
