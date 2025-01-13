@@ -18,6 +18,7 @@ with st.expander("See source code"):
         watersheds = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/cmw_watersheds.geojson"
         
         m.add_geojson(boundary, layer_name="CMW boundary")
+        m.add_geojson(watersheds, layer_name="CMW boundary")
         # #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
         # m.add_points_from_xy(
         #     climate,
