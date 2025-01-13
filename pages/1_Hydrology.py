@@ -26,7 +26,7 @@ with st.expander("See source code"):
             y="lat",
             #color_column="station_name",
             #icon_names=["gear", "map", "leaf", "globe"],
-            spin=True,
+            spin=False,
             add_legend=True,
         )
         # m.add_points_from_xy(
