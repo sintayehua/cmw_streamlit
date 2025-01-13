@@ -16,7 +16,7 @@ with st.expander("See source code"):
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
         soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
         
-        # m.add_geojson(boundary, layer_name="CMW boundary")
+        m.add_geojson(boundary, layer_name="CMW boundary")
         # #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
         # m.add_points_from_xy(
         #     climate,
