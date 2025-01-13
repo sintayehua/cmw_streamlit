@@ -19,16 +19,16 @@ with st.expander("See source code"):
         
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_geojson(watersheds, layer_name="CMW boundary")
-        # #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
-        # m.add_points_from_xy(
-        #     climate,
-        #     x="long",
-        #     y="lat",
-        #     #color_column="station_name",
-        #     #icon_names=["gear", "map", "leaf", "globe"],
-        #     spin=True,
-        #     add_legend=True,
-        # )
+        #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
+        m.add_points_from_xy(
+            climate,
+            x="long",
+            y="lat",
+            #color_column="station_name",
+            #icon_names=["gear", "map", "leaf", "globe"],
+            spin=True,
+            add_legend=True,
+        )
         # m.add_points_from_xy(
         #     flow,
         #     x="lon",
