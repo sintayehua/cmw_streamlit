@@ -16,26 +16,26 @@ with st.expander("See source code"):
         cog_landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover_cog.tif"
         soil = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/soil.geojson"
         
-        m.add_geojson(boundary, layer_name="CMW boundary")
-        #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
-        m.add_points_from_xy(
-            climate,
-            x="long",
-            y="lat",
-            #color_column="station_name",
-            #icon_names=["gear", "map", "leaf", "globe"],
-            spin=True,
-            add_legend=True,
-        )
-        m.add_points_from_xy(
-            flow,
-            x="lon",
-            y="lat",
-            #color_column="station_name",
-            #icon_names=["gear", "map", "leaf", "globe"],
-            spin=False,
-            add_legend=True,
-        )
+        # m.add_geojson(boundary, layer_name="CMW boundary")
+        # #m.add_vector(soil, layer_name="Soil", zoom_to_layer=True)
+        # m.add_points_from_xy(
+        #     climate,
+        #     x="long",
+        #     y="lat",
+        #     #color_column="station_name",
+        #     #icon_names=["gear", "map", "leaf", "globe"],
+        #     spin=True,
+        #     add_legend=True,
+        # )
+        # m.add_points_from_xy(
+        #     flow,
+        #     x="lon",
+        #     y="lat",
+        #     #color_column="station_name",
+        #     #icon_names=["gear", "map", "leaf", "globe"],
+        #     spin=False,
+        #     add_legend=True,
+        # )
         # Add a Legend
         colors = ['#006400', '#ffbb22','#ffff4c','#f096ff',
                   '#fa0000', '#b4b4b4','#f0f0f0','#0064c8']
@@ -53,14 +53,14 @@ with st.expander("See source code"):
         
         #m.add_cog_layer(cog_landcover, colormap= 'viridis', name="Landcover")
         #m.add_colormap(cmap=colormap)
-        #m.add_raster(landcover, colormap="viridis", layer_name="Landcover")
+        m.add_raster(landcover, layer_name="Landcover")
         #m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
-        m.split_map(
-            left_layer=landcover_full, right_layer=landcover
-        )
+        #m.split_map(
+        #    left_layer=landcover_full, right_layer=landcover
+        #)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
     
 m.to_streamlit(height=700)
