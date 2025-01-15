@@ -58,7 +58,11 @@ with st.expander("See source code"):
         
         #m.add_cog_layer(cog_landcover, colormap= 'viridis', name="Landcover")
         #m.add_colormap(cmap=colormap)
-        m.add_raster(landcover, bands=[1], layer_name="Landcover", vmin=1, vmax=10)
+        #m.add_raster(landcover, bands=[1], layer_name="Landcover", vmin=1, vmax=10)
+        m.split_map(
+            left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
+        )
+        m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_legend(colors=colors, labels=labels)
         #m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
         #m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
