@@ -1,9 +1,5 @@
 --find-links=https://girder.github.io/large_image_wheels GDAL
 geopandas
-leafmap==0.42.6
-fiona
+leafmap
 owslib
 streamlit
-xarray
-rasterio
-localtileserver
