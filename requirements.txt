@@ -3,5 +3,4 @@ geopandas
 leafmap
 owslib
 streamlit
-branca==0.3.1
-folium
+jupyter-server-proxy
