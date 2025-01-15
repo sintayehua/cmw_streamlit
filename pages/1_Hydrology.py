@@ -10,6 +10,7 @@ st.title("CMW Hydrology")
 with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map()
+        m.add_basemap("HYBRID")
         boundary = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/cmw_max_boundary.geojson"
         climate = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/nma_stations.csv"
         flow = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/flow_stations.csv"
