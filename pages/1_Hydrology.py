@@ -1,5 +1,7 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
+import os
+os.environ['LOCALTILESERVER_CLIENT_PREFIX'] = 'proxy/{port}'
 
 st.set_page_config(layout="wide")
 
