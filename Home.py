@@ -46,5 +46,5 @@ photo = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/ch
 st.image(photo)
 
 m = leafmap.Map(minimap_control=True)
-m.add_basemap("OpenTopoMap")
+m.add_basemap("HYBRID")
 m.to_streamlit(height=500)
