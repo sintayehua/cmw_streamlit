@@ -7,8 +7,11 @@ folium_map = f.Map([33.8994, 35.51775], zoom_start=14)
 # URL to the raster file
 landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
 
+# Define the bounds of the raster image
+bounds = [[33.895, 35.510], [33.905, 35.525]]
+
 # Add the raster layer to the Folium map
-raster_layer = f.raster_layers.ImageOverlay(landcover)
+raster_layer = f.raster_layers.ImageOverlay(image=landcover, bounds=bounds)
 raster_layer.add_to(folium_map)
 
 # Convert the Folium map to HTML
