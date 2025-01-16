@@ -1,5 +1,6 @@
 import folium as f
 import streamlit as st
+from streamlit_folium import folium_static
 
 # Create a Folium map centered at a specific location
 folium_map = f.Map([33.8994, 35.51775], zoom_start=14)
@@ -14,8 +15,5 @@ bounds = [[33.895, 35.510], [33.905, 35.525]]
 raster_layer = f.raster_layers.ImageOverlay(image=landcover, bounds=bounds)
 raster_layer.add_to(folium_map)
 
-# Convert the Folium map to HTML
-html_map = folium_map._repr_html_()
-
 # Display the map in Streamlit
-st.markdown(html_map, unsafe_allow_html=True)
+folium_static(folium_map)
