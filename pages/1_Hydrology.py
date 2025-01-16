@@ -23,7 +23,7 @@ with st.expander("See source code"):
             x="long",
             y="lat",
             layer_name="Weather Stations",
-            icon_names="gear",
+            icon_names=["gear", "map", "leaf", "globe"],
             add_legend=True,
         )
         m.add_points_from_xy(
