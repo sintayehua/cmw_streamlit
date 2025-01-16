@@ -26,15 +26,6 @@ with st.expander("See source code"):
             icon_names=["gear", "map", "leaf", "globe"],
             add_legend=True,
         )
-        m.add_points_from_xy(
-            flow,
-            x="lon",
-            y="lat",
-            layer_name="Flow gauges",
-            icon_names="water",
-            add_legend=True,
-        )
-        
         m.split_map(
             left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
         )
