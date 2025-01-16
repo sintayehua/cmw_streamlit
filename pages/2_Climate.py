@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_folium import folium_static
 
 # Create a Folium map centered at a specific location
-folium_map = f.Map([33.8994, 35.51775], zoom_start=14)
+folium_map = f.Map([12, 36], zoom_start=14)
 
 # URL to the raster file
 landcover = "https://raw.githubusercontent.com/sintayehua/cmw_streamlit/main/data/landcover.tif"
