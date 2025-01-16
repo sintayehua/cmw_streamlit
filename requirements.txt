@@ -5,4 +5,5 @@ owslib
 streamlit
 jupyter-server-proxy
 folium
+streamlit_folium
 rasterio
