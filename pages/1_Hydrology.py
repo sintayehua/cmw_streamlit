@@ -28,7 +28,7 @@ with st.expander("See source code"):
         )
         m.add_points_from_xy(
             flow,
-            x="long",
+            x="lon",
             y="lat",
             layer_name="Flow gauges",
             icon_names="water",
