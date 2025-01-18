@@ -17,7 +17,7 @@ with st.expander("See source code"):
         
         m.add_geojson(boundary, layer_name="CMW boundary", info_mode='on_click')
         m.add_geojson(watersheds, layer_name="Watersheds", info_mode='on_click')
-        m.add_geojson(rivers, layer_name="Watersheds", info_mode='on_click')
+        m.add_geojson(rivers, layer_name="Rivers", info_mode='on_click')
         m.add_points_from_xy(
             climate,
             x="long",
